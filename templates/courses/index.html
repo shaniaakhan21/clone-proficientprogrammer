@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title%} Learn to become python developer {% endblock %}
+{% block content %}
+
+<!--Section for demo class-->
+<section id="showcase"  style="background-image :url('static/img/back3.jpg'); background-position: center; opacity: 0.9; background-size: cover;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-xs-right btn__spacing btn__spacing--left" style="color: white; font-family: Rubik; padding:10px 10px 10px 10px; font-weight: 700; line-height: 1.3; text-shadow: 2px 2px 5px #555555;">
+                <h1 style="font-weight: bolder;">EXCLUSIVE TRAINING : A Complete Python Programming Course. </h1>
+                <h3>This is an exclusive live training course that will take you from 
+                    writing a single line of code to becoming a web developer.</h3>
+                <h3>This is NOT for you if you're not serious about becoming 
+                    a python developer.</h3>
+                <h3>If you have lot of passion for python then it's for you.
+                    Book Your Demo Class NOW....!!
+                </h3>
+                <h3>Book a strategy call with us to see if you're good fit for our Python Programming Course. </h3><br>
+                <a href="{% url 'register' %}" class="btn btn-secondary btn-xs form-control" type="submit" 
+                style="font-family: Rubik; padding: 15px 15px 15px 15px; 
+                font-weight: bold; height: 70px; background-color: #39d3b8; color: whitesmoke; font-size: x-large;">I want FREE Demo Class  &#128587; </a>
+            </div>
+        </div>
+    </div>   
+</section>
+<!--Companys-->
+<div class="container-fluid" style="background-color:#eaf0f5;">
+   <div class="col-xs-2" id="image1" style="font-weight:bold; text-align: center;  padding-top: 20px;">
+      <img src="{% static 'img/whole.jpg' %}">
+    </div>
+</div>
+<div class="container-fluid" style="background-color:#eaf0f5;">
+  <div class="col-xs-2" id="image1" style="text-align: center; padding-bottom: 10px;">
+     <h5 style="font-size: xx-large; font-weight: 700; "><br>Biggest Companies Are Powered by aspiring<br> DEVELOPERS just like you 💪</h5>
+   </div>
+</div>
+<div class="container-fluid" style="background-color:white;">
+<div class="col-xs-2" id="image1" style="text-align: center; padding-top: 80px; padding-bottom: 70px;">
+   <h5 style="font-size: xx-large; font-weight: 700; ">
+      <br>Do you want to be a highly-paid developer? <br>Explore our program. 👇
+  </h5>
+</div>
+</div>
+<div class="container-fluid text-center" style="background-color:white; ">
+<div class="col-xs-2" id="image1"  style="font-weight:bold; text-align: center;  padding-top: 20px;">
+   <div class="col" style=" text-align: center; margin:10px 10px 10px 10px; padding-top: 10px;">
+     <img class="thumbnail" src="{% static 'img/course.jpg' %}" style="padding-bottom: 40px; width:900px; "><br>
+     
+       <a href="{% url 'course' %}" class="btn btn-xs " type="submit" 
+                style="font-family: Rubik; padding: 15px 15px 15px 15px; font-weight: bold; height: 70px; background-color: #39d3b8; color: white; font-size: x-large; margin-bottom: 20px;">Explore Our Course </a>
+      
+   </div>
+ </div>
+</div>
+<div class="container-fluid" style="background-color:white; background-image: url('static/img/back.jpg'); background-size: cover;
+background-position-y: bottom; opacity: 0.7; padding-top: 100px; padding-left: 80px; padding-right: 80px; padding-bottom: 100px;">
+<div class="col-xs-2" id="image1" style="margin: 30px; background-color: #ffffff; border: 1px solid black; opacity: 0.6; text-align: center; padding-top: 80px; padding-bottom: 70px; padding-left: 80px; padding-right: 80px;">
+  <h1 style="color: black; font-size:63px;">Proven Courses & Real Results 😍</h1> <br>
+  <h5 style="font-size: xx-large; font-weight: 700; color: black; opacity: 1;">
+    
+  No certifications or awards here. It's more like virtual python programming tuitions. We focus on giving you real developer skills that bring you real results: 
+  Clients, jobs, self-improvement, and profit. We not only make our students satisfied but want to give them real results.
+  We have complete python development course . We have got more than 10+ projects for you. We are here to help you to become a 
+  python ninja.           
+  </h5>
+  <a href="{% url 'who' %}" class="btn btn-xs " type="submit" 
+                style="font-family: Rubik; padding: 15px 15px 15px 15px; font-weight: bold; height: 70px; background-color: teal; opacity: 1; color: black; font-size: x-large; margin-bottom: 20px;">Know More </a>
+</div>
+</div>
+
+{% endblock %}

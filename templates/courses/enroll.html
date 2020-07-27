@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title%} Course Enrollment {% endblock %}
+{% block content %}
+
+<div class="page-wrapper p-t-100 p-b-100 font-robo" style="background-color: wheat;">
+    <div class="wrapper wrapper--w680">
+        <div class="card card-1">
+            <div class="card-heading" style="height: 302px;"></div>
+            <div class="card-body">
+                {% include 'partials/_alerts.html' %}
+                <h2 class="title">REGISTER ME TO THE EXCLUSIVE PYTHON TRAINING COURSE:</h2>
+                <form action="{% url 'enrollment' %}" method="POST">
+                   
+                    {% csrf_token %}
+                    <div class="input-group">
+                        <input class="input--style-1" type="text" placeholder="FULL NAME" name="fullname">
+                    </div>
+                        <div class="input-group">
+                            <input class="input--style-1 js-datepicker" type="text" placeholder="BIRTHDATE" name="birthdate">
+                            <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                        </div>
+                    <div class="input-group">
+                        <div class="rs-select2 js-select-simple select--no-search">
+                            <select name="gender">
+                                <option disabled="disabled" selected="selected">GENDER</option>
+                                <option>FEMALE</option>
+                                <option>MALE</option>
+                            </select>
+                            <div class="select-dropdown"></div>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <input class="input--style-1" type="text" placeholder="PIN CODE" name="pincode">
+                    </div>
+                    <div class="input-group">
+                        <input class="input--style-1" type="text" placeholder="PHONE NUMBER WITH COUNTRY CODE" name="phonenumber">
+                    </div>
+                    <div class="input-group">
+                        <input class="input--style-1" type="text" placeholder="EMAIL" name="email">
+                    </div>
+                    <div class="input-group">
+                        <input class="input--style-1" type="text" placeholder="GAURDIAN'S NAME" name="gname">
+                    </div>
+                    <div class="input-group">
+                        <input class="input--style-1" type="text" placeholder="GAURDIAN'S PHONE NUMBER WITH COUNTRY CODE" name="gphone">
+                    </div>
+                    <div class="input-group">
+                        <input class="input--style-1" type="text" placeholder="CITY" name="city">
+                    </div>
+                    <div class="input-group">
+                        <input class="input--style-1" type="text" placeholder="STATE" name="state">
+                    </div>
+                    <div class="input-group">
+                        <input class="input--style-1" type="text" placeholder="COUNTRY" name="country">
+                    </div>
+                    <div class="input-group">
+                        <div class="rs-select2 js-select-simple select--no-search">
+                            <select name="ques">
+                                <option disabled="disabled" selected="selected">ARE YOU A BEGINNER IN PYTHON ? </option>
+                                <option>YES</option>
+                                <option>NO</option>
+                            </select>
+                            <div class="select-dropdown"></div>
+                        </div>
+                    </div>
+                    <div class="p-t-20">
+                        <button class="btn btn--radius" style="background-color: #39d3b8; font-size: x-large; padding-top: 20px; padding-bottom: 20px;" type="submit">Complete Your Enrollment.</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock%}

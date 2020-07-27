@@ -1,0 +1,78 @@
+{% extends 'base.html' %} 
+{% load static %}
+{% block title%} Get to know us. {% endblock %}
+{% block content %}
+<div class="container-fluid" style="background-color: #031017; color:white; font-family: Rubik; padding: 20px 20px 20px 20px; ">
+    <h1 style="text-align: center; text-decoration: underline;">THE TEAM OF PROFICIENT PROGRAMMER ARE HERE TO MAKE PYTHON EASY FOR YOU.</h1>
+    <div class="row">
+        <div class="col-xs-6 col-lg-6" style="text-align: left;">
+            <h4>Hey...!!! Guys, It's time to say goodbye to boring programming courses out there.
+            Because We are here to make programming joyful for you. If you have passion about python 
+            get enrolled right now. Firstly, join our free demo class and know if this is what you are looking for.</h4>
+            <h4 style="color: bisque;">We proficient programmer team is here to make python easy for you. We have gone through 1000+ courses available
+                 online throughout the world. After researching for 3 years we have made this course to make python joyful and easy for you.
+                Programming is very complicated there's  no doubt but we have made this course in such a way that it seems easy to you. Our 
+                instructors will be there with you on each and every step during this course and even after this course.</h4>
+            
+        </div>
+        <div class="col-xs-6  " style="text-align: right; padding-top: 20px; padding-left: 40px;">
+            <img src="{% static 'img/course.jpg' %}">
+        </div>
+    </div>
+    <div class="col-xs-6">
+        <h4>This is completely LIVE Training. We don't give recorded lessons we want full attentiveness of student in this course.
+            Students have to be fully involved during live classes and doubts session for better outcomes. All the doubts will be 
+            taken and errors will be solved on daily basis. The students in this course don't have to go through other tutorials in 
+            order to get grip on some topic. 
+        </h4>
+        <h4 style="color: bisque;">
+            We assure you that we will provide you complete guidance throughout the course and resources also. All the topics 
+            will be completed in most understanding way. Weekends will be off to give students time to practice whatever they have 
+            learned during weekdays.
+        </h4>
+        <h4>
+            We are aware of how it feels to collect resources from here and there and then do programming. We know how it feels to 
+            get stuck on an error for over days and weeks. That's why we are here to guide you and help you to solve your error and make you 
+            learn through your mistakes. It's a complete development course we are going to cover whatever is required for python developer. 
+        </h4>
+        <h3> We will TEACH you PYTHON in most enjoyable way . You, my friend will not only become a python developer but will get  a mentor for lifetime.</h3>
+        <h2 style="color:blanchedalmond ;">We have made this course by mixing up all the ingredients from all the courses that we have done in past 3 years. If you join the course
+            we assure you that you won't regret it. </h2>
+        <h1 style="color:#39d3b8;">We have 10+ projects available for you in this course. SO Hurry up !!.... Register for FREEEEE Demo Class Now.👇 </h1>
+        <div class="container text-center">
+            <a href="{% url 'register' %}" class="btn btn-xs " type="submit" 
+                style="font-family: Rubik; padding: 15px 15px 15px 15px; 
+                font-weight: bold; height: 70px; text-align: center; background-color: teal; opacity: 1;
+                color: blanchedalmond; font-size: x-large; margin-bottom: 20px;">JOIN FREE DEMO CLASS </a>
+        </div>
+    </div>
+</div>
+<div class="container-fluid" style="background-color: whitesmoke;">
+    <div class="row">
+        <div class="col-xs-4">
+            <img src="{% static 'img/shaniya.jpg'%}" style="border-radius: 50%;     border: 9px solid #d8d7d6; width: 195px;
+            margin-left: 100px; margin-top: 20px;  margin-bottom: 20px">
+        </div>
+        <div class="col-xs-8" style="margin: 50px;">
+            <h2 style="text-decoration: underline; color:#555555;">SHANIYA KHAN</h2>
+            <h3 style="color: teal;">Python Instructor , Director and Web developer at Proficient Programmer.</h3>
+            <h4 style="color: brown;">Your Mentor throughout the course.</h4>
+
+        </div>
+    </div>
+</div>
+<div class="container-fluid" style="background-color:cadetblue;">
+    <div class="row">
+        
+        <div class="col-xs-8" style="margin-left: 60px; padding-left: 60px;">
+            <br><br><h2 style="text-decoration: underline; color:#555555;">IRAM KHAN</h2>
+            <h3 style="color: whitesmoke;">Human Resource Manager and Digital Content Manager at Proficient       <br>Programmer.</h3>
+
+
+        </div>
+        <div class="col-xs-4">
+            <img src="{% static 'img/iram.jpg'%}" style="border-radius: 50%;     border: 9px solid #80b9b4; width:220px; margin-left: 50px; margin-bottom: 20px; margin-top: 20px;">
+        </div>
+    </div>
+</div>
+{% endblock %}
