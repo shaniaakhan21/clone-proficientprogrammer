@@ -10,8 +10,8 @@ Setup:
 
 5. Install required dependences with: pip install -r requirements.txt.
 
-Make migrations with: python manage.py makemigrations and then python manage.py migrate.
+6. Make migrations with: python manage.py makemigrations and then python manage.py migrate.
 
-Run app localy with: python manage.py runserver.
+7. Run app localy with: python manage.py runserver.
 
-Link to my project : https://clone-proficientprogrammer.herokuapp.com/
+8. Link to my project : https://clone-proficientprogrammer.herokuapp.com/
